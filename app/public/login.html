@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Đăng nhập - Job Board
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="container header-content">
+
+        <h1>JOB BOARD</h1>
+
+        <nav>
+
+            <a href="/">
+                Trang chủ
+            </a>
+
+            <a href="/#jobs">
+                Việc làm
+            </a>
+
+            <a href="/register.html">
+                Đăng ký
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="auth-page">
+
+    <div class="auth-box">
+
+        <h2>
+            Đăng nhập
+        </h2>
+
+
+        <form id="login-form">
+
+            <label for="email">
+                Email
+            </label>
+
+            <input
+                id="email"
+                type="email"
+                required
+                placeholder="Nhập email"
+            >
+
+
+            <label for="password">
+                Mật khẩu
+            </label>
+
+            <input
+                id="password"
+                type="password"
+                required
+                placeholder="Nhập mật khẩu"
+            >
+<div class="forgot-password-link">
+
+    <a href="/forgot-password.html">
+        🔐 Quên mật khẩu?
+    </a>
+
+</div>
+
+            <button type="submit">
+                Đăng nhập
+            </button>
+
+        </form>
+
+
+        <p
+            id="login-message"
+            class="auth-message"
+        ></p>
+
+
+        <p>
+            Chưa có tài khoản?
+
+            <a href="/register.html">
+                Đăng ký
+            </a>
+        </p>
+
+    </div>
+
+</main>
+
+
+<footer>
+    Website Tuyển Dụng - Job Board
+</footer>
+
+
+<script src="/js/login.js"></script>
+
+</body>
+
+</html>

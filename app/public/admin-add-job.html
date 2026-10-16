@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Thêm tin tuyển dụng
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="container header-content">
+
+        <h1>
+            JOB BOARD - ADMIN
+        </h1>
+
+        <nav>
+
+            <a href="/admin-jobs.html">
+                Quản lý tin
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="auth-page">
+
+    <div class="auth-box admin-form-box">
+
+        <h2>
+            Thêm tin tuyển dụng
+        </h2>
+
+
+        <form id="add-job-form">
+
+            <label>
+                Tên công việc
+            </label>
+
+            <input
+                id="title"
+                type="text"
+                required
+            >
+
+
+            <label>
+                Công ty
+            </label>
+
+            <select
+                id="company"
+                required
+            >
+                <option value="">
+                    -- Chọn công ty --
+                </option>
+            </select>
+
+
+            <label>
+                Danh mục
+            </label>
+
+            <select
+                id="category"
+                required
+            >
+                <option value="">
+                    -- Chọn danh mục --
+                </option>
+            </select>
+
+
+            <label>
+                Địa điểm
+            </label>
+
+            <input
+                id="location"
+                type="text"
+                required
+            >
+
+
+            <label>
+                Mức lương
+            </label>
+
+            <input
+                id="salary"
+                type="text"
+                placeholder="Ví dụ: 15 - 20 triệu"
+            >
+
+
+            <label>
+                Hạn nộp
+            </label>
+
+            <input
+                id="deadline"
+                type="date"
+                required
+            >
+
+
+            <label>
+                Mô tả công việc
+            </label>
+
+            <textarea
+                id="description"
+                rows="6"
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Thêm tin
+            </button>
+
+        </form>
+
+
+        <p
+            id="job-message"
+            class="auth-message"
+        ></p>
+
+
+        <a href="/admin-jobs.html">
+            ← Quay lại
+        </a>
+
+    </div>
+
+</main>
+
+
+<script src="/js/admin-add-job.js"></script>
+
+</body>
+
+</html>

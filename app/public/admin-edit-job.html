@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Sửa tin tuyển dụng
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="container header-content">
+
+        <h1>
+            JOB BOARD - ADMIN
+        </h1>
+
+        <nav>
+
+            <a href="/admin-jobs.html">
+                Quản lý tin
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="auth-page">
+
+    <div class="auth-box admin-form-box">
+
+        <h2>
+            Sửa tin tuyển dụng
+        </h2>
+
+
+        <form id="edit-job-form">
+
+            <label>Tên công việc</label>
+
+            <input
+                id="title"
+                type="text"
+                required
+            >
+
+
+            <label>Công ty</label>
+
+            <select
+                id="company"
+                required
+            ></select>
+
+
+            <label>Danh mục</label>
+
+            <select
+                id="category"
+                required
+            ></select>
+
+
+            <label>Địa điểm</label>
+
+            <input
+                id="location"
+                type="text"
+                required
+            >
+
+
+            <label>Mức lương</label>
+
+            <input
+                id="salary"
+                type="text"
+            >
+
+
+            <label>Hạn nộp</label>
+
+            <input
+                id="deadline"
+                type="date"
+                required
+            >
+
+
+            <label>Trạng thái</label>
+
+            <select id="status">
+
+                <option value="active">
+                    Đang tuyển
+                </option>
+
+                <option value="closed">
+                    Đã đóng
+                </option>
+
+            </select>
+
+
+            <label>Mô tả</label>
+
+            <textarea
+                id="description"
+                rows="6"
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Lưu thay đổi
+            </button>
+
+        </form>
+
+
+        <p
+            id="job-message"
+            class="auth-message"
+        ></p>
+
+    </div>
+
+</main>
+
+
+<script src="/js/admin-edit-job.js"></script>
+
+</body>
+
+</html>

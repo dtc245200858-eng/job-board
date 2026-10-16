@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Dashboard Admin - Job Board
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="container header-content">
+
+        <h1>
+            JOB BOARD - ADMIN
+        </h1>
+
+        <nav>
+
+            <a href="/">
+                🏠 Trang chủ
+            </a>
+
+            <a href="/admin-jobs.html">
+                💼 Quản lý tin
+            </a>
+
+            <a href="/admin-applications.html">
+                📄 Hồ sơ ứng viên
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="admin-page">
+
+    <!-- ==================================================
+         HEADER DASHBOARD
+    =================================================== -->
+
+    <section class="admin-dashboard-header">
+
+        <div>
+
+            <div class="dashboard-badge">
+                ✨ Trung tâm quản trị
+            </div>
+
+            <h2>
+                Dashboard Admin
+            </h2>
+
+            <p id="admin-user">
+                Đang kiểm tra tài khoản...
+            </p>
+
+        </div>
+
+
+        <div class="dashboard-decoration">
+            🚀
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         NỘI DUNG SAU KHI XÁC THỰC ADMIN
+    =================================================== -->
+
+    <div
+        id="admin-content"
+        style="display: none;"
+    >
+
+        <!-- ==============================================
+             THỐNG KÊ
+        =============================================== -->
+
+        <section class="dashboard-stats">
+
+            <div class="stat-card stat-blue">
+
+                <div class="stat-icon">
+                    💼
+                </div>
+
+                <div>
+
+                    <p>
+                        Tổng tin tuyển dụng
+                    </p>
+
+                    <h3 id="total-jobs">
+                        0
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card stat-green">
+
+                <div class="stat-icon">
+                    🟢
+                </div>
+
+                <div>
+
+                    <p>
+                        Tin đang tuyển
+                    </p>
+
+                    <h3 id="active-jobs">
+                        0
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card stat-purple">
+
+                <div class="stat-icon">
+                    📄
+                </div>
+
+                <div>
+
+                    <p>
+                        Hồ sơ ứng viên
+                    </p>
+
+                    <h3 id="total-applications">
+                        0
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card stat-orange">
+
+                <div class="stat-icon">
+                    ⏳
+                </div>
+
+                <div>
+
+                    <p>
+                        Hồ sơ chờ xử lý
+                    </p>
+
+                    <h3 id="pending-applications">
+                        0
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================================
+             THAO TÁC NHANH
+        =============================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-section-title">
+
+                <div>
+
+                    <span>
+                        ⚡
+                    </span>
+
+                    <h3>
+                        Thao tác nhanh
+                    </h3>
+
+                </div>
+
+                <p>
+                    Quản lý hệ thống tuyển dụng
+                </p>
+
+            </div>
+
+
+            <div class="admin-quick-actions">
+
+                <a
+                    href="/admin-jobs.html"
+                    class="quick-action quick-jobs"
+                >
+
+                    <span class="quick-action-icon">
+                        💼
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Quản lý tin tuyển dụng
+                        </strong>
+
+                        <p>
+                            Thêm, sửa, đóng hoặc mở tin
+                        </p>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="/admin-applications.html"
+                    class="quick-action quick-applications"
+                >
+
+                    <span class="quick-action-icon">
+                        📄
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Quản lý hồ sơ ứng viên
+                        </strong>
+
+                        <p>
+                            Xem CV và cập nhật trạng thái
+                        </p>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================================
+             HỒ SƠ GẦN ĐÂY
+        =============================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-section-title">
+
+                <div>
+
+                    <span>
+                        🔔
+                    </span>
+
+                    <h3>
+                        Hồ sơ mới nhất
+                    </h3>
+
+                </div>
+
+
+                <a
+                    href="/admin-applications.html"
+                    class="view-all-link"
+                >
+                    Xem tất cả →
+                </a>
+
+            </div>
+
+
+            <div
+                id="recent-applications"
+                class="recent-applications"
+            >
+
+                <p>
+                    Đang tải hồ sơ...
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<footer>
+    ✨ Website Tuyển Dụng - Job Board
+</footer>
+
+
+<script src="/js/admin.js"></script>
+
+</body>
+
+</html>

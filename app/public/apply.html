@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Nộp CV - Job Board
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="container header-content">
+
+        <h1>JOB BOARD</h1>
+
+        <nav>
+
+            <a href="/">
+                Trang chủ
+            </a>
+
+            <a href="/#jobs">
+                Việc làm
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="auth-page">
+
+    <div class="auth-box">
+
+        <h2>
+            Nộp hồ sơ ứng tuyển
+        </h2>
+
+
+        <p id="job-name">
+            Đang tải thông tin việc làm...
+        </p>
+
+
+        <form
+            id="application-form"
+        >
+
+            <label for="cv">
+                Chọn CV
+            </label>
+
+            <input
+                id="cv"
+                name="cv"
+                type="file"
+                accept=".pdf,.doc,.docx"
+                required
+            >
+
+
+            <p>
+                Chấp nhận PDF, DOC, DOCX.
+                Dung lượng tối đa 5 MB.
+            </p>
+
+
+            <button type="submit">
+                Nộp CV
+            </button>
+
+        </form>
+
+
+        <p
+            id="application-message"
+            class="auth-message"
+        ></p>
+
+
+        <a
+            id="back-job-link"
+            href="/"
+        >
+            ← Quay lại việc làm
+        </a>
+
+    </div>
+
+</main>
+
+
+<footer>
+    Website Tuyển Dụng - Job Board
+</footer>
+
+
+<script src="/js/apply.js"></script>
+
+</body>
+
+</html>

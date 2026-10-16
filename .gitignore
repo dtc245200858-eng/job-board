@@ -1,0 +1,20 @@
+.env
+
+node_modules/
+
+app/node_modules/
+
+app/uploads/*
+!app/uploads/.gitkeep
+
+*.log
+
+.DS_Store
+
+.vscode/
+# Local HTTPS certificates
+nginx/ssl/*.key
+nginx/ssl/*.crt
+
+# Local compose backups
+docker-compose.yml.backup-*

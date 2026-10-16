@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Đăng ký - Job Board
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="container header-content">
+
+        <h1>JOB BOARD</h1>
+
+        <nav>
+
+            <a href="/">
+                Trang chủ
+            </a>
+
+            <a href="/#jobs">
+                Việc làm
+            </a>
+
+            <a href="/login.html">
+                Đăng nhập
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="auth-page">
+
+    <div class="auth-box">
+
+        <h2>
+            Đăng ký tài khoản
+        </h2>
+
+
+        <form id="register-form">
+
+            <label for="full-name">
+                Họ và tên
+            </label>
+
+            <input
+                id="full-name"
+                type="text"
+                required
+                placeholder="Nhập họ và tên"
+            >
+
+
+            <label for="email">
+                Email
+            </label>
+
+            <input
+                id="email"
+                type="email"
+                required
+                placeholder="Nhập email"
+            >
+
+
+            <label for="password">
+                Mật khẩu
+            </label>
+
+            <input
+                id="password"
+                type="password"
+                required
+                minlength="6"
+                placeholder="Ít nhất 6 ký tự"
+            >
+
+
+            <label for="confirm-password">
+                Nhập lại mật khẩu
+            </label>
+
+            <input
+                id="confirm-password"
+                type="password"
+                required
+                minlength="6"
+                placeholder="Nhập lại mật khẩu"
+            >
+
+
+            <button type="submit">
+                Đăng ký
+            </button>
+
+        </form>
+
+
+        <p
+            id="register-message"
+            class="auth-message"
+        ></p>
+
+
+        <p>
+            Đã có tài khoản?
+
+            <a href="/login.html">
+                Đăng nhập
+            </a>
+        </p>
+
+    </div>
+
+</main>
+
+
+<footer>
+    Website Tuyển Dụng - Job Board
+</footer>
+
+
+<script src="/js/register.js"></script>
+
+</body>
+
+</html>
