@@ -10,7 +10,10 @@ COPY src ./src
 COPY public ./public
 COPY scripts ./scripts
 
-RUN mkdir -p /app/uploads
+RUN mkdir -p /app/uploads \
+    && chown -R node:node /app
+
+USER node
 
 EXPOSE 3000
 
